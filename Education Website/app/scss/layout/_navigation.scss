@@ -1,0 +1,173 @@
+// NAVBAR
+.nav {
+  background-color: transparent;
+  width: 100vw;
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  z-index: 11;
+
+  transition: var(--transition);
+
+  &__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  button {
+    display: none;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+
+    a {
+      font-size: 0.9rem;
+      transition: var(--transition);
+
+      &:hover {
+        color: var(--clr-bg2);
+      }
+    }
+  }
+
+  &__item {
+  }
+}
+
+// NAVBAR Scroll Class
+.window-scroll {
+  background-color: var(--clr-primary);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+/* ================= MEDIA QUERIES (Tablets)*/
+
+@media only screen and (max-width: 1024px) {
+  /** NAVBAR **/
+  .nav {
+    button {
+      display: inline-block;
+      background: transparent;
+      font-size: 1.8rem;
+      color: var(--clr-white);
+      cursor: pointer;
+    }
+
+    #close-menu-btn {
+      display: none;
+    }
+
+    &__menu {
+      display: none;
+
+      position: fixed;
+      top: 5rem;
+      right: 5rem;
+      height: fit-content;
+      gap: 0;
+      flex-direction: column;
+      overflow: hidden;
+      box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3);
+
+      li {
+        width: 100%;
+        height: 5.8rem;
+
+        a {
+          background-color: var(--clr-primary);
+          box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
+          width: 100%;
+          height: 100%;
+          display: grid;
+          place-items: center;
+
+          &:hover {
+            background-color: var(--clr-bg2);
+            color: var(--clr-white);
+          }
+        }
+      }
+    }
+  }
+
+  @keyframes openNav {
+    0% {
+      display: none;
+      height: 0;
+      width: 0;
+      opacity: 0;
+    }
+
+    100% {
+      height: 23.2rem;
+      width: 18rem;
+      display: flex;
+      opacity: 1;
+    }
+  }
+
+  @keyframes closeNav {
+    0% {
+      height: 23.2rem;
+      width: 18rem;
+      display: block;
+      opacity: 1;
+    }
+
+    100% {
+      display: none;
+      height: 0;
+      width: 0;
+      opacity: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* NAVBAR */
+  .nav {
+    &__menu {
+      width: 100%;
+      right: 0;
+    }
+  }
+
+  @keyframes openNav {
+    0% {
+      display: none;
+      height: 0;
+      width: 100%;
+      transform: scaleX(0);
+      opacity: 0;
+    }
+
+    100% {
+      height: 23.2rem;
+      display: flex;
+      opacity: 1;
+      transform: scaleX(1);
+    }
+  }
+
+  @keyframes closeNav {
+    0% {
+      height: 23.2rem;
+      width: 100%;
+      transform: scaleX(1);
+      display: block;
+      opacity: 1;
+    }
+
+    100% {
+      display: none;
+      height: 0;
+      transform: scaleX(0);
+      opacity: 0;
+    }
+  }
+}

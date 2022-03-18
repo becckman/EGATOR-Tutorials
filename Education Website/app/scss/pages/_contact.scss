@@ -1,0 +1,132 @@
+.contact {
+  &__container {
+    background-color: var(--clr-bg1);
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 4rem;
+    height: 30rem;
+    margin: 7rem auto;
+    border-radius: 1rem;
+  }
+
+  &__aside {
+    background-color: var(--clr-primary);
+    padding: 3rem;
+    border-radius: 1rem;
+    position: relative;
+    bottom: 10rem;
+
+    .h2 {
+      text-align: left;
+      margin-bottom: 1rem;
+    }
+
+    & > p {
+      font-size: 0.9rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__image {
+    width: 12rem;
+    margin-bottom: 2rem;
+  }
+
+  &__details {
+    li {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 3rem;
+
+    a {
+      background-color: var(--clr-bg2);
+      padding: 0.5rem 0.6rem;
+      border-radius: 50%;
+      font-size: 1rem;
+      transition: var(--transition);
+
+      &:hover {
+        background: transparent;
+      }
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-right: 4rem;
+
+    input[type="text"] {
+      flex: 1;
+    }
+
+    .btn {
+      width: max-content;
+      margin-top: 1rem;
+    }
+  }
+}
+
+.form__name {
+  display: flex;
+  gap: 1.2rem;
+}
+
+input,
+textarea {
+  max-width: 100%;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--clr-bg);
+  color: var(--clr-white);
+}
+
+@media only screen and (max-width: 1240px) {
+  .contact {
+    &__container {
+      gap: 1.5rem;
+      margin-top: 3rem;
+      height: auto;
+      padding: 1.5rem;
+    }
+
+    &__aside {
+      width: auto;
+      padding: 1.5rem;
+      bottom: 0;
+    }
+    &__form {
+      align-self: center;
+      margin-right: 1.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contact {
+    &__container {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      margin-top: 0;
+      padding: 0;
+    }
+
+    &__form {
+      margin: 0 1.5rem 3rem;
+    }
+
+    .form__name {
+      flex-direction: column;
+    }
+  }
+}

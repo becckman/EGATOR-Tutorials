@@ -1,0 +1,23 @@
+.btn {
+  display: inline-block;
+  background-color: var(--clr-white);
+  color: var(--clr-black);
+  padding: 1rem 2rem;
+  border: 1px solid transparent;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: var(--transition);
+
+  &:hover {
+    background: transparent;
+    color: var(--clr-white);
+    border-color: var(--clr-white);
+  }
+
+  &-primary {
+    background-color: var(--clr-danger);
+    color: var(--clr-white);
+  }
+}
