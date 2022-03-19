@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"> 
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./dist/style.css">
+
+    <!-- Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
+
+    <!-- JavaScript -->
+    <script src="./app/js/orders.js" defer></script>
+    <script src="./app/js/script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <aside class="sidebar">
+            <header class="sidebar__header">
+                <div class="sidebar__logo">
+                    <img src="./images/logo.png" alt="logo">
+                    <p class="lg">EGA<span>TOR</span></p>
+                </div>
+                <div class="sidebar__close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>                        
+                </div>
+            </header>
+
+            <nav class="sidebar__nav">
+                <ul class="sidebar__menu">
+                    <li class="sidebar__item">
+                        <a href="#" class="active sidebar__link">
+                            <span class="material-icons-sharp sidebar__icon">grid_view</span> 
+                            <span class="md sidebar__title">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="#" class="sidebar__link">
+                            <span class="material-icons-sharp sidebar__icon">person_outline</span> 
+                            <span class="md sidebar__title">Customers</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="#" class="sidebar__link">
+                            <span class="material-icons-sharp sidebar__icon">receipt_long</span> 
+                            <span class="md sidebar__title">Orders</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="#" class="sidebar__link">
+                            <span class="material-icons-sharp sidebar__icon">insights</span> 
+                            <span class="md sidebar__title">Analytics</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="#" class="sidebar__link">
+                            <span class="material-icons-sharp sidebar__icon">mail_outline</span> 
+                            <span class="md sidebar__title">Messages</span>
+                            <span class="sidebar__message-count">26</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="#" class="sidebar__link">
+                            <span class="material-icons-sharp sidebar__icon">inventory</span> 
+                            <span class="md sidebar__title">Products</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="#" class="sidebar__link">
+                            <span class="material-icons-sharp sidebar__icon">report_gmailerrorred</span> 
+                            <span class="md sidebar__title">Reports</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="#" class="sidebar__link">
+                            <span class="material-icons-sharp sidebar__icon">settings</span> 
+                            <span class="md sidebar__title">Settings</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="#" class="sidebar__link">
+                            <span class="material-icons-sharp sidebar__icon">add</span> 
+                            <span class="md sidebar__title">Add Product</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="#" class="sidebar__link">
+                            <span class="material-icons-sharp sidebar__icon">logout</span> 
+                            <span class="md sidebar__title">Logout</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- ----------------- END OF ASIDE -------------------- -->
+        <main>
+            <h1>Dashboard</h1>
+
+            <div class="date">
+                <input type="date">
+            </div>
+
+            <div class="insights">
+                <div class="insights__card card">
+                    <span class="insights__icon material-icons-sharp sidebar__icon">analytics</span>
+                    <div class="insights__middle">
+                        <div class="insights__left">
+                            <div class="md insights__label">
+                                Total Sales
+                                <span class="xlg">$25,024</span>
+                            </div>
+                        </div>
+                        <div class="insights__right">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="insights__progress-number">
+                                <p>81%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+
+                <div class="insights__card card">
+                    <span class="insights__icon material-icons-sharp sidebar__icon">bar_chart</span>
+                    <div class="insights__middle">
+                        <div class="insights__left">
+                            <div class="md insights__label">
+                                Total Expenses
+                                <span class="xlg">$14,160</span>
+                            </div>
+                        </div>
+                        <div class="insights__right">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="insights__progress-number">
+                                <p>62%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+
+                <div class="insights__card card">
+                    <span class="insights__icon material-icons-sharp sidebar__icon">stacked_line_chart</span>
+                    <div class="insights__middle">
+                        <div class="insights__left">
+                            <div class="md insights__label">
+                                Total Income
+                                <span class="xlg">$10,864</span>
+                            </div>
+                        </div>
+                        <div class="insights__right">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="insights__progress-number">
+                                <p>44%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+            </div>
+
+            <!-- END OF INSIGHTS -->
+
+            <div class="recent-orders">
+                <h2 class="lg">Recent Orders</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Product Number</th>
+                            <th>Payment</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+                <a href="#">Show All</a>
+            </div>
+        </main>
+        <!-- ---------END OF MAIN ----------------- -->
+
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+                <div class="theme-toggler">
+                    <span class="material-icons-sharp active-theme">light_mode</span>
+                    <span class="material-icons-sharp">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>Daniel</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="./images/profile-1.jpg" alt="profile photo">
+                    </div>
+                </div>
+            </div>
+
+            <!-- END OF TOP -->
+            <div class="recent-updates">
+                <h2>Recent Updates</h2>
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./images/profile-2.jpg" alt="profile photo 2">
+                        </div>
+                        <div class="message">
+                            <p><b>Mike Tyson</b> received his order of Night lion tech GPS drone</p>
+                            <small class="text-muted">2 Minutes Ago</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./images/profile-3.jpg" alt="profile photo 2">
+                        </div>
+                        <div class="message">
+                            <p><b>Mike Tyson</b> received his order of Night lion tech GPS drone</p>
+                            <small class="text-muted">2 Minutes Ago</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./images/profile-4.jpg" alt="profile photo 2">
+                        </div>
+                        <div class="message">
+                            <p><b>Mike Tyson</b> received his order of Night lion tech GPS drone</p>
+                            <small class="text-muted">2 Minutes Ago</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END OF RECENT UPDATES -->
+            <div class="sales-analytics">
+                <h2 class="lg">Sales Analytics</h2>
+                <div class="item online">
+                    <div class="icon">
+                        <span class="material-icons-sharp">shopping_cart</span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3 class="md">ONLINE ORDERS</h3>
+                            <small class="text-muted">Last 24 Hours</small>
+                        </div>
+                        <span class="xsm success">+39%</span>
+                        <span class="md">3849</span>
+                    </div>
+                </div>
+                <div class="item offline">
+                    <div class="icon">
+                        <span class="material-icons-sharp">local_mall</span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3 class="md">OFFLINE ORDERS</h3>
+                            <small class="text-muted">Last 24 Hours</small>
+                        </div>
+                        <span class="xsm danger">-17%</span>
+                        <span class="md">1100</span>
+                    </div>
+                </div>
+                <div class="item customers">
+                    <div class="icon">
+                        <span class="material-icons-sharp">person</span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3 class="md">NEW CUSTOMERS</h3>
+                            <small class="text-muted">Last 24 Hours</small>
+                        </div>
+                        <span class="xsm success">+25%</span>
+                        <span class="md">849</span>
+                    </div>
+                </div>
+                <div class="item add-product">
+                    <div>
+                        <span class="material-icons-sharp">person</span>
+                        <span class="md">Add Product</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>

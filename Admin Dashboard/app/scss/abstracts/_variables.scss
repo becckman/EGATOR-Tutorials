@@ -1,0 +1,25 @@
+/* --------------- ROOT VARIABLES ------------------ */
+:root {
+  --clr-primary: #7380ec;
+  --clr-primary-var: #111e88;
+  --clr-danger: #ff7782;
+  --clr-success: #41f1b6;
+  --clr-warning: #ffbb55;
+  --clr-white: #fff;
+  --clr-info-dark: #7d8da1;
+  --clr-info-light: #dce1eb;
+  --clr-dark: #363949;
+  --clr-dark-var: #677483;
+  --clr-light: rgba(132, 139, 200, 0.18);
+  --clr-bg: #f6f6f9;
+
+  --card-border-radius: 2rem;
+  --border-radius-sm: 0.4rem;
+  --border-radius-md: 0.8rem;
+  --border-radius-lg: 1.2rem;
+
+  --card-padding: 1.8rem;
+  --padding-sm: 1.2rem;
+
+  --box-shadow: 0 2rem 3rem var(--clr-light);
+}

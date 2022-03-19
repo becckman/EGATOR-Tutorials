@@ -1,0 +1,49 @@
+a {
+  color: var(--clr-dark);
+}
+
+h1,
+.xlg {
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+
+h2,
+.lg {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+h3,
+.md {
+  font-size: 0.87rem;
+  font-weight: 700;
+}
+
+h4,
+.sm {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+h5,
+.xsm {
+  font-size: 0.77rem;
+  font-weight: 700;
+}
+
+small {
+  font-size: 0.75rem;
+}
+
+.text-muted {
+  color: var(--clr-info-dark);
+}
+
+p {
+  color: var(--clr-dark-var);
+}
+
+b {
+  color: var(--clr-dark);
+}
